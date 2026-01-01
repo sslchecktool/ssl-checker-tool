@@ -1,71 +1,70 @@
-Certificate Decoder
+# Certificate Decoder
 
-Easily Decode and Inspect SSL/TLS Certificates
+**Easily Decode and Inspect SSL/TLS Certificates**
 
-🔗 Try it Live: https://sslchecktool.com/tools/certificate-decoder/
+🔗 **Try it Live:**  
+https://sslchecktool.com/tools/certificate-decoder/
 
-🧠 What It Does
+---
 
-A Certificate Decoder lets you view all the details hidden inside your SSL/TLS certificate (whether it’s in PEM, DER, or PFX format) in a clean, human-readable layout. This is especially handy when you want to double-check that your certificate contains the correct data before installation or while troubleshooting.
+##  What It Does
 
-🔍 What You’ll See When You Decode a Certificate
+The **Certificate Decoder** allows you to inspect all the details embedded inside an SSL/TLS certificate in a clear, human-readable format.
 
-Once decoded, the tool displays information such as:
+It supports common certificate formats such as:
 
-Subject / Common Name (CN)
+- PEM
+- DER
+- PFX / PKCS#12
 
-Issuer (the Certificate Authority that issued it)
+This tool is especially useful for verifying certificate details **before installation** or while **troubleshooting SSL/TLS issues**.
 
-Validity Period
+---
 
-Not Before: Start date
+##  What You’ll See When You Decode a Certificate
 
-Not After: Expiry date
+After decoding, the tool displays the following information:
 
-Serial Number
+- **Subject / Common Name (CN)**
+- **Issuer** (Certificate Authority that issued the certificate)
+- **Validity Period**
+  - Not Before (start date)
+  - Not After (expiry date)
+- **Serial Number**
+- **Signature Algorithm**
+- **Public Key Algorithm and Key Size**
+- **Subject Alternative Names (SANs)**
+- **Extensions**
+  - Key Usage
+  - Extended Key Usage
+  - Other X.509 extensions
 
-Signature Algorithm
+---
 
-Public Key Algorithm and Key Size
+## What This Helps You Verify
 
-Subject Alternative Names (SANs)
+Using the decoded output, you can confirm that your certificate:
 
-Extensions (e.g., Key Usage, Extended Key Usage)
+- Belongs to the **correct domain**
+- Is **currently valid** and not expired
+- Contains the **required SAN entries**
+- Uses the **expected key size and algorithm**
+- Is signed by the **correct Certificate Authority**
 
-This helps you confirm that your certificate:
+---
 
-Belongs to the correct domain
+## How to Use the Certificate Decoder
 
-Is valid for the right time period
+1. Paste your certificate into the input field  
+   (PEM, DER, or PFX format supported)
+2. Click **Decode Certificate**
+3. Instantly review all decoded certificate details
 
-Includes the right SAN entries
+---
 
-Was signed by the expected Certificate Authority
+## 📄 Example PEM Certificate Format
 
-🚀 How to Use
-
-Paste your certificate text (PEM, DER, or PFX) into the input field.
-
-Click Decode Certificate.
-
-Review all the decoded details instantly.
-
-Example PEM Format:
-
+```text
 -----BEGIN CERTIFICATE-----
 MIIF...
 -----END CERTIFICATE-----
-
-🎯 Why It Matters
-
-Decoding your certificate helps when you need to:
-
-Verify the accuracy of certificate data
-
-Troubleshoot SSL/TLS installation issues
-
-Validate details before renewing or reissuing certificates
-
-Check SANs, key sizes, and algorithms in use
-
-Having this visibility helps you avoid configuration errors and ensures a smoother SSL/TLS setup.
