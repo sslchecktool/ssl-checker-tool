@@ -81,3 +81,5 @@ openssl s_client -connect mail.example.com:993
 
 # POP3 SSL (port 995)
 openssl s_client -connect mail.example.com:995
+
+This fetches the certificate and shows details such as issuer, validity, and chain.
