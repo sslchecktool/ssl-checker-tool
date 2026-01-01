@@ -1,56 +1,64 @@
 # CSR Decoder
 
-**Decode and inspect Certificate Signing Requests (CSR)**
+**Easily Decode and Review Your Certificate Signing Requests (CSR)**
 
-🔗 Live Tool: https://sslchecktool.com/tools/csr-decoder/
-
-## What It Does
-
-A **CSR (Certificate Signing Request)** is a block of encoded text that contains your public key and identity information (domain, organization, etc.) that you send to a Certificate Authority (CA) when requesting an SSL/TLS certificate.  
-Sometimes you need to *check what information is actually inside* the CSR — that’s where a CSR Decoder helps. :contentReference[oaicite:1]{index=1}
-
-This tool decodes your CSR and displays all its fields in a clear, readable format.
-
-## What You’ll See
-
-When you decode a CSR, the tool shows:
-
-- **Subject / Domain Name (CN)**
-- **Organization**
-- **Country**
-- **Public key type (RSA / ECC)**
-- **Key length**
-- **SAN (Subject Alternative Names)**  
-- **Signature algorithm**
-
-These fields help you **verify that the CSR is correct** before you submit it to a CA. :contentReference[oaicite:2]{index=2}
-
-## 🚀 How to Use
-
-1. Paste your CSR text into the box.
-2. Click **Decode**.
-3. View decoded details like:
-   - Issuer
-   - Public key
-   - Algorithm
-   - SANs
-   - Subject
-4. Validate key details before SSL issuance.
-
-## Why It Matters
-
-Verifying your CSR ensures:
-- Accurate domain and organization info
-- Correct key type and length
-- No mistakes before certificate issuance
-
-## 🛡️ Example CSR Format
------BEGIN CERTIFICATE REQUEST-----
-MIIB...
------END CERTIFICATE REQUEST-----
-
+🔗 **Try it Live:**  
+https://sslchecktool.com/tools/csr-decoder/
 
 ---
 
- 
+## 🧠 What It Does
 
+A **CSR (Certificate Signing Request)** is a block of encoded text that contains your **public key** and identifying information such as your **domain name, organization, and country**.
+
+This file is submitted to a **Certificate Authority (CA)** when requesting an SSL/TLS certificate.
+
+The **CSR Decoder** allows you to instantly inspect the contents of your CSR in a **clear, human-readable format**, helping you verify all details before submission.
+
+---
+
+## 🔍 What You’ll See When You Decode a CSR
+
+Once decoded, the tool displays key CSR information including:
+
+- **Subject / Common Name (CN)**
+- **Organization (O)**
+- **Country (C)**
+- **Public Key Type** (RSA or ECC)
+- **Key Length**
+- **Subject Alternative Names (SANs)**
+- **Signature Algorithm**
+
+---
+
+## ✅ What This Helps You Verify
+
+Decoding your CSR helps confirm that:
+
+- The **domain name** is correct
+- Organization and country details are accurate
+- The **key type and key size** meet security requirements
+- Required **SAN entries** are present
+- The CSR is ready for submission to a Certificate Authority
+
+---
+
+## 🚀 How to Use the CSR Decoder
+
+1. Paste your CSR text into the input field  
+2. Click **Decode**
+3. Review the decoded details, including:
+   - Subject
+   - Public Key
+   - Algorithm
+   - SANs
+4. Confirm everything is correct before issuing your SSL certificate
+
+---
+
+## 🛡️ Example CSR Format
+
+```text
+-----BEGIN CERTIFICATE REQUEST-----
+MIIB...
+-----END CERTIFICATE REQUEST-----
