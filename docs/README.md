@@ -1,7 +1,3 @@
-Below is a **single-page, professional `README.md`** you can **copy-paste directly into GitHub**.
-Clean, enterprise-ready, and suitable for security / DevOps audiences.
-
----
 
 # 🔐 SSL & TLS Tool Documentation
 
